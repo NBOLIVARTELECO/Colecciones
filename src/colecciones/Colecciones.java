@@ -2,13 +2,7 @@
 //Ejemplo sobre colecciones
 package colecciones;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Colecciones {
 
@@ -23,6 +17,8 @@ public class Colecciones {
     arrayList.add("uno");
     arrayList.add("dos");
     arrayList.add("tres");
+    
+    
     
     System.out.println("ArrayList: " + arrayList);
     
@@ -62,8 +58,17 @@ public class Colecciones {
     System.out.println("Tail: " + tail);
     
     // Recorrer la lista
+    
     for(Integer elemento : linkedList) {
       System.out.println(elemento);
+    }
+    //Implementacion iterator
+    
+    Iterator <Integer> iterador = linkedList.iterator();
+    
+    while(iterador.hasNext()){
+        System.out.println("valor: "+ iterador.next());
+        
     }
     
 
